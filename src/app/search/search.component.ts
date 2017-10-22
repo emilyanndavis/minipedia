@@ -52,6 +52,7 @@ export class SearchComponent implements OnInit {
             return;
         }
         this._wikiService.setSearchTerm(searchTerm);
+        this.searchInput.nativeElement.blur();
         this.searchButton.nativeElement.blur();
         this._wikiService.search(searchTerm);
     }
