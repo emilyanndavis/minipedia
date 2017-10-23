@@ -10,6 +10,10 @@ form {
     justify-content: center;
 }
 
+label.sr-only {
+    display: none;
+}
+
 button, input {
     font-size: 18px;
 }
@@ -39,7 +43,6 @@ button {
         margin-right: -6px;
     }
 }
-
 
 button.random-btn span {
     display: inline-block;
