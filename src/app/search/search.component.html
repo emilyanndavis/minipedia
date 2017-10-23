@@ -13,7 +13,7 @@
 </button>
 
 <form [formGroup]="searchForm" (ngSubmit)="search()">
-    <label for="searchTerm" class="sr-only"></label>
+    <label for="searchTerm" class="sr-only">Search for something...</label>
     <input #searchInput type="text" formControlName="searchTerm" id="searchTerm" placeholder="Search for something..." (keyup.Enter)="search()" />
     <button #searchButton class="search-btn" aria-label="search"><i class="fa fa-search" aria-hidden="true"></i></button>
 </form>
